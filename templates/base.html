@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web GIS</title>
+    <link rel="stylesheet" href='https://unpkg.com/leaflet@1.9.3/dist/leaflet.css'
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+          crossorigin=""/>
+    <link rel="stylesheet" href="{% static 'cluster/MarkerCluster.css' %}"/>
+    <link rel="stylesheet" href="{% static 'cluster/MarkerCluster.Default.css' %}"/>
+    <link rel="stylesheet" href='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css'/>
+</head>
+<body>
+<div id="map" style="width: 100%; height: 650px"></div>
+<button onclick="fullScreenView()">Full Screen View</button>
+<div class="coordinate"></div>
+<button class="print-map">print</button>
+<button class="zoom-to-view">Zoom to layer</button>
+</body>
+
+<script src='https://unpkg.com/leaflet@1.9.3/dist/leaflet.js'
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin="">
+</script>
+<script src="{% static 'jquery/jQ.js' %}"></script>
+<script src="{% static 'browserPrint/leaflet.browser.print.min.js' %}"></script>
+<script src="{% static 'cluster/leaflet.markercluster.js' %}"></script>
+<script src='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js'></script>
+
+<script src="{% static 'data.js' %}"></script>
+<script src="{% static 'bridges.js' %}"></script>
+<script>
+    const map = L.map('map', {measureControl: true}).setView([35.07478522601802, 48.6476100355336], 13);
+    const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
+
+    const otp = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17,
+    });
+
+    const smoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+        maxZoom: 20,
+    });
+    //scale option
+    L.control.scale().addTo(map);
+
+    const mapID = document.getElementById('map');
+
+    function fullScreenView() {
+        mapID.requestFullscreen();
+    }
+
+    //getting  lat,lng
+    map.on('mousemove', function (e) {
+        $('.coordinate').html(`Lat:${e.latlng.lat} Lng: ${e.latlng.lng}`)
+    })
+
+    //    print map
+    //     $('.print-map').click(function (){window.print();})
+    L.control.browserPrint().addTo(map);
+
+    //    adding search functionality
+    L.Control.geocoder().addTo(map);
+
+
+    // clustering data points
+    const marker = L.markerClusterGroup();
+    const villages = L.geoJSON(data, {
+        onEachFeature: function (feature, layer) {
+            layer.bindPopup(feature.properties.name)
+        }
+    });
+    villages.addTo(marker);
+    marker.addTo(map);
+
+
+    //adding layers to map
+    const bridgesOfHamedan = L.geoJSON(bridges)
+    bridgesOfHamedan.addTo(marker);
+    marker.addTo(map);
+
+    const baseMaps = {'OSM': osm, 'Open Topo Map': otp, 'Alidade Smooth Dark': smoothDark}
+    {#const overlayMaps = {'Villages': villages, 'Bridges': bridgesOfHamedan}#}
+    const overlayMaps = {}
+    {% for s in shp %}
+        const {{ s.name }} =L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
+        layers: '{{s.name}}',
+        transparent: true,
+        format: 'image/png'
+    })
+        overlayMaps['{{ s.name }}'] = {{ s.name }}
+    {% endfor %}
+
+    {% for t in tiff %}
+        const {{ t.name }} = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
+            layers: '{{ t.name }}',
+        transparent: true,
+        format: 'image/png',
+    })
+        overlayMaps['{{ t.name }}'] = {{ t.name }}
+    {% endfor %}
+
+    L.control.layers(baseMaps, overlayMaps, {collapsed: false, position: 'topleft'}).addTo(map);
+
+
+    //    zoom to a specific view
+    $('.zoom-to-view').click(function () {
+        map.setView([34.7895440311849, 48.49222388767862], 15)
+    })
+
+
+</script>
+</html>

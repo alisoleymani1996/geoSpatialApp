@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.8 (2804184 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="241038" visible="true" version="33" changeset="119425340" timestamp="2022-04-07T11:18:30Z" user="PulisakZ" uid="9026132">
+  <member type="way" ref="966377375" role="outer"/>
+  <member type="way" ref="440575129" role="outer"/>
+  <member type="way" ref="440587282" role="outer"/>
+  <member type="way" ref="440580136" role="outer"/>
+  <member type="way" ref="440581193" role="outer"/>
+  <member type="way" ref="440576911" role="outer"/>
+  <member type="way" ref="440582217" role="outer"/>
+  <member type="way" ref="440578658" role="outer"/>
+  <member type="way" ref="440575199" role="outer"/>
+  <member type="way" ref="440577885" role="outer"/>
+  <member type="way" ref="440577505" role="outer"/>
+  <member type="way" ref="440575466" role="outer"/>
+  <member type="way" ref="440579193" role="outer"/>
+  <member type="way" ref="440582564" role="outer"/>
+  <member type="way" ref="440579914" role="outer"/>
+  <member type="way" ref="440580782" role="outer"/>
+  <member type="way" ref="440579059" role="outer"/>
+  <member type="way" ref="440580996" role="outer"/>
+  <member type="way" ref="440587860" role="outer"/>
+  <member type="way" ref="440578680" role="outer"/>
+  <member type="way" ref="440587248" role="outer"/>
+  <member type="way" ref="440580414" role="outer"/>
+  <member type="way" ref="440578309" role="outer"/>
+  <member type="way" ref="440577384" role="outer"/>
+  <member type="way" ref="440577180" role="outer"/>
+  <member type="way" ref="440587583" role="outer"/>
+  <member type="way" ref="440583362" role="outer"/>
+  <member type="way" ref="440579443" role="outer"/>
+  <member type="way" ref="440577472" role="outer"/>
+  <member type="way" ref="440579797" role="outer"/>
+  <member type="way" ref="440579687" role="outer"/>
+  <member type="way" ref="440581194" role="outer"/>
+  <member type="way" ref="440580966" role="outer"/>
+  <member type="way" ref="440584302" role="outer"/>
+  <member type="way" ref="440579008" role="outer"/>
+  <member type="way" ref="440586941" role="outer"/>
+  <member type="way" ref="440578154" role="outer"/>
+  <member type="way" ref="440578999" role="outer"/>
+  <member type="way" ref="440580427" role="outer"/>
+  <member type="way" ref="440577790" role="outer"/>
+  <member type="way" ref="440575273" role="outer"/>
+  <member type="way" ref="440580894" role="outer"/>
+  <member type="way" ref="440576397" role="outer"/>
+  <member type="way" ref="440588236" role="outer"/>
+  <member type="way" ref="440583804" role="outer"/>
+  <member type="way" ref="440581505" role="outer"/>
+  <member type="way" ref="440583916" role="outer"/>
+  <member type="way" ref="440579337" role="outer"/>
+  <member type="way" ref="440577605" role="outer"/>
+  <member type="way" ref="440579477" role="outer"/>
+  <member type="way" ref="440580345" role="outer"/>
+  <member type="way" ref="440575448" role="outer"/>
+  <member type="way" ref="440587338" role="outer"/>
+  <member type="way" ref="440575741" role="outer"/>
+  <member type="way" ref="440582232" role="outer"/>
+  <member type="way" ref="440581779" role="outer"/>
+  <member type="way" ref="440583957" role="outer"/>
+  <member type="way" ref="837726715" role="outer"/>
+  <member type="way" ref="440576663" role="outer"/>
+  <member type="way" ref="440581438" role="outer"/>
+  <member type="way" ref="440579084" role="outer"/>
+  <member type="way" ref="440578351" role="outer"/>
+  <member type="way" ref="440582345" role="outer"/>
+  <member type="way" ref="440581185" role="outer"/>
+  <member type="way" ref="440582652" role="outer"/>
+  <member type="way" ref="440580194" role="outer"/>
+  <member type="way" ref="440580775" role="outer"/>
+  <member type="way" ref="440587845" role="outer"/>
+  <member type="way" ref="440578694" role="outer"/>
+  <member type="way" ref="440582853" role="outer"/>
+  <member type="way" ref="440575464" role="outer"/>
+  <member type="way" ref="440580757" role="outer"/>
+  <member type="way" ref="440582513" role="outer"/>
+  <member type="way" ref="440578631" role="outer"/>
+  <member type="node" ref="27557313" role="admin_centre"/>
+  <member type="node" ref="494596154" role="label"/>
+  <tag k="admin_level" v="4"/>
+  <tag k="alt_name:ar" v="همدان (محافظة)"/>
+  <tag k="alt_name:cs" v="Hamadán (provincie)"/>
+  <tag k="alt_name:de" v="Hamadan (Provinz)"/>
+  <tag k="alt_name:es" v="Provincia de Hamadán"/>
+  <tag k="alt_name:fr" v="Province de Hamedan"/>
+  <tag k="alt_name:ja" v="ハマダーン州"/>
+  <tag k="alt_name:ku" v="Hemedan (parêzgeh)"/>
+  <tag k="alt_name:pl" v="Hamadan (ostan)"/>
+  <tag k="alt_name:ru" v="Хамадан (остан)"/>
+  <tag k="alt_name:uk" v="Хамадан (остан)"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="is_in:continent" v="Asia"/>
+  <tag k="is_in:country" v="Iran"/>
+  <tag k="is_in:country_code" v="IR"/>
+  <tag k="ISO3166-2" v="IR-13"/>
+  <tag k="name" v="استان همدان"/>
+  <tag k="name:ar" v="محافظة همدان"/>
+  <tag k="name:arz" v="همدان (محافظه)"/>
+  <tag k="name:ast" v="Provincia d'Hamadán"/>
+  <tag k="name:az" v="Həmədan ostanı"/>
+  <tag k="name:azb" v="همدان اوستانی"/>
+  <tag k="name:be-x-old" v="Хамадан (астан)"/>
+  <tag k="name:bg" v="Хамадан (остан)"/>
+  <tag k="name:bn" v="হামাদন প্রদেশ"/>
+  <tag k="name:ca" v="Província d'Hamadan"/>
+  <tag k="name:ce" v="Хамадан (остан)"/>
+  <tag k="name:ceb" v="Hamadān"/>
+  <tag k="name:ckb" v="پارێزگای ھەمەدان"/>
+  <tag k="name:cs" v="Hamadán"/>
+  <tag k="name:da" v="Hamadan (provins)"/>
+  <tag k="name:de" v="Hamadan"/>
+  <tag k="name:diq" v="Hemedan (eyalet)"/>
+  <tag k="name:en" v="Hamadan Province"/>
+  <tag k="name:eo" v="Provinco Hamadano"/>
+  <tag k="name:es" v="Hamadán"/>
+  <tag k="name:et" v="Hamadāni provints"/>
+  <tag k="name:eu" v="Hamadan (probintzia)"/>
+  <tag k="name:fa" v="استان همدان"/>
+  <tag k="name:fi" v="Hamadān (provinssi)"/>
+  <tag k="name:fr" v="Hamedan"/>
+  <tag k="name:hak" v="Hamadan-sén"/>
+  <tag k="name:he" v="המדאן (פרובינציה)"/>
+  <tag k="name:hi" v="हमादान प्रांत"/>
+  <tag k="name:hr" v="Hamadanska pokrajina"/>
+  <tag k="name:hu" v="Hamadán tartomány"/>
+  <tag k="name:id" v="Provinsi Hamadān"/>
+  <tag k="name:it" v="Provincia di Hamadan"/>
+  <tag k="name:ja" v="ハマダーン"/>
+  <tag k="name:ka" v="ჰამადანის ოსტანი"/>
+  <tag k="name:ko" v="하마단주"/>
+  <tag k="name:ku" v="Hemedan"/>
+  <tag k="name:lt" v="Hamadano provincija"/>
+  <tag k="name:lv" v="Hamadāna"/>
+  <tag k="name:mg" v="Hamadān"/>
+  <tag k="name:mk" v="Хамадан (покраина)"/>
+  <tag k="name:mr" v="हमादान प्रांत"/>
+  <tag k="name:ms" v="Hamedan"/>
+  <tag k="name:nan" v="Hamadan Séng"/>
+  <tag k="name:new" v="हामादान प्रान्त"/>
+  <tag k="name:nl" v="Hamadan (provincie)"/>
+  <tag k="name:nn" v="Hamadan-provinsen"/>
+  <tag k="name:no" v="Hamadan (provins)"/>
+  <tag k="name:os" v="Хамадан (остан)"/>
+  <tag k="name:pl" v="Hamadan"/>
+  <tag k="name:pnb" v="صوبہ ہمدان"/>
+  <tag k="name:ps" v="همدان ولايت"/>
+  <tag k="name:pt" v="Hamadã (província)"/>
+  <tag k="name:ro" v="Provincia Hamadān"/>
+  <tag k="name:ru" v="Хамадан"/>
+  <tag k="name:sco" v="Hamadan Province"/>
+  <tag k="name:sh" v="Hamadanska pokrajina"/>
+  <tag k="name:sr" v="Покрајина Хамадан"/>
+  <tag k="name:sv" v="Hamadan (provins)"/>
+  <tag k="name:ta" v="அமதான் மாகாணம்"/>
+  <tag k="name:tg" v="Устони Ҳамадон"/>
+  <tag k="name:tl" v="Hamadān"/>
+  <tag k="name:tr" v="Hamedan Eyaleti"/>
+  <tag k="name:tt" v="Һәмәдан (устан)"/>
+  <tag k="name:uk" v="Хамадан"/>
+  <tag k="name:ur" v="صوبہ ہمدان"/>
+  <tag k="name:vi" v="Hamadan (tỉnh)"/>
+  <tag k="name:war" v="Hamadān (lalawigan)"/>
+  <tag k="name:wuu" v="哈马丹省"/>
+  <tag k="name:yue" v="哈馬丹省"/>
+  <tag k="name:zh" v="哈馬丹省"/>
+  <tag k="place" v="province"/>
+  <tag k="short_name:ar" v="همدان"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q187373"/>
+  <tag k="wikipedia" v="en:Hamadan Province"/>
+ </relation>
+</osm>
